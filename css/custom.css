@@ -1,21 +1,21 @@
 :root {
   /* Background color */
-  --color-bg: #cfceca;
+  --color-bg: #fff7e3;
 
   /* Header background color */
-  --color-head-bg: #625e5c;
-
+  --color-head-bg: #abc4c9;
+  --color-main-h1: #5a484d;
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #abc4c9;
+  --color-text-logotype: black;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #abc4c9;
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-bg: #abc4c9;
+  --color-link-hover: #617e84;
+  --color-link-active: #617e84;
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
@@ -28,11 +28,11 @@
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: #7c989d;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #000;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
@@ -44,10 +44,10 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #e3e1d8;
-  --color-card-bg-inverted: #4d4e4f;
-  --color-cta-card-bg: #847f7e;
-  --color-cta-card-bg-inverted: #c0bfb9;
+  --color-card-bg: #7c989d;
+  --color-card-bg-inverted: #abc4c9;
+  --color-cta-card-bg: #000;
+  --color-cta-card-bg-inverted: #000;
 
   /* Fonts & font weights*/
   --font-family-sans: ui-sans-serif;
@@ -57,5 +57,54 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #fff7e3;
 }
+
+/* Register design */
+
+/* .form_info {
+  padding: 5px;
+}
+.artikler {
+  background-color: var(--color-card-bg);
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 1%;
+  border-radius: 3rem;
+}
+.farvet_kasse {
+  background-color: #abc4c9;
+  display: grid;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.farvet_boks {
+  background-color: #abc4c9;
+  display: grid;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+button {
+  background-color: #d2b7be;
+  color: #876971;
+  border: 1px solid #d2b7be;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+img {
+  margin: 20px;
+}
+.tekst {
+  padding: 20%;
+}
+h1 {
+  
+} */

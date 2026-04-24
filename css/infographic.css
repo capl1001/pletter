@@ -40,3 +40,9 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-card-bg-inverted);
 }
+
+#Spildt_rødvin:hover,
+#Spildt_champagne,
+#Spildt_is {
+  cursor: pointer;
+}

@@ -30,3 +30,71 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+/* Forms */
+.form_group:has(:required) label::after {
+  content: " *";
+  color: red;
+}
+.form_group:has(:user-invalid) {
+  input {
+    border-color: red;
+  }
+}
+fieldset legend h3::after {
+  content: " *";
+  color: red;
+}
+label {
+  display: block;
+}
+form {
+  display: grid;
+  gap: 2rem;
+  color: #5a484d;
+}
+
+.form_group {
+  display: grid;
+  gap: 1rem;
+}
+.form_info {
+  padding: 20px;
+}
+input,
+textarea {
+  border: 1px solid #876a71;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: #fff7e3;
+}
+
+button {
+  background-color: #d2b7be;
+  color: #876971;
+  border: 1px solid #876971;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+#form-section {
+  display: grid;
+  gap: 2rem;
+}
+.output {
+  background: var(--color-card-bg);
+  padding: 1rlh;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.5rlh;
+}
+.form_group-kon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_nr {
+  padding-top: 3rem;
+}
+.nr_btn {
+  padding-top: 1rem;
+}

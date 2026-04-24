@@ -1,0 +1,133 @@
+h1 {
+  font-size: 2.5rem;
+  margin: 2rem 2rem;
+  line-height: 3rem;
+}
+details {
+  outline: 2px solid #876971;
+}
+
+summary {
+  background-color: #d2b7be;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.spg-tekst {
+  padding: 1rem;
+}
+.accordion {
+  margin: 1rem;
+}
+summary::marker {
+  content: none;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+summary::after {
+  content: "+";
+}
+
+[open] summary::after {
+  content: "-";
+}
+
+html {
+  interpolate-size: allow-keywords;
+}
+
+::details-content {
+  height: 0;
+  transition: 0.3s allow-discrete;
+  overflow: clip;
+}
+
+[open]::details-content {
+  height: auto;
+}
+
+button {
+  background-color: #d2b7be;
+  color: black;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.nyhed-button {
+  background-color: #d2b7be;
+  color: black;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  margin: 2rem 4rem;
+}
+.popover_p {
+  color: black;
+  padding-top: 2rem;
+}
+[popover] {
+  padding: 2rem;
+  max-height: 90vh;
+  max-width: 90vw;
+  width: 65ch;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  line-height: 1.6;
+  border: solid 2px #876971;
+  background-color: #f3f3f3;
+}
+
+[popover] button {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+}
+
+:popover-open {
+  display: grid;
+}
+
+::backdrop {
+  background: #0001;
+}
+
+[popover] {
+  opacity: 0;
+  transition: 1s allow-discrete;
+  scale: 0.8;
+}
+
+:popover-open {
+  opacity: 1;
+  scale: none;
+}
+
+@starting-style {
+  :popover-open {
+    opacity: 0;
+    scale: 0.8;
+  }
+}
+
+::backdrop {
+  opacity: 0;
+  transition: 0.8s allow-discrete;
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
