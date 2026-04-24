@@ -10,19 +10,24 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="stylesheet" href="css/forside.css">
+  <link rel="icon" type="image/png" href="SVG/logo/Asset 30.svg">
+  <input type="checkbox" id="theme-toggle">
   <title>Emergency Pletter</title>
 </head>
 
 <body id="frontpage">
   <header>
+
     <nav>
-      <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+      <div class="logo">
+        <a href="#">
+          <img class="logo" src="SVG/logo/Asset 22.png" alt="logo">
+        </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="instruction.html">Efterspil</a></li>
+        <li><a class="menuItem" href="register.html">Få hjælp</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -33,6 +38,170 @@
   </header>
 
   <main>
+    <h1>Pletpanik? Bare rolig - det kan stadig reddes!</h1>
+
+    <section class="daily">
+
+      <article class="daily_card">
+        <img class="daily_img" src="SVG/bordet.svg" alt="Bordet">
+
+        <div class="daily_text">
+          <h3>Efterspil</h3>
+          <p>3 typiske pletter efter festen</p>
+          <a href="instruction.html" class="cta_btn">Se her</a>
+        </div>
+      </article>
+
+      <article class="daily_card">
+        <img class="daily_img" src="SVG/Asset 27.svg" alt="forms">
+
+        <div class="daily_text">
+          <h3>En specifik plet</h3>
+          <p>Få den rigtige hjælp du behøver af et godt team</p>
+          <a href="register.html" class="cta_btn">Få hjælp</a>
+        </div>
+      </article>
+
+      <article class="spg">
+
+        <h3>Ofte stillede spørgsmål</h3>
+        <details class="accordion" open name="accordion">
+          <summary>Hvad hvis jeg ikke har de anbefalede ingredienser?</summary>
+          <div class="spg-tekst">
+            <p>Mange metoder kan tilpasses med ting, du allerede har derhjemme. Alternativer bliver ofte nævnt, så du
+              stadig kan løse problemet uden specialprodukter.</p>
+          </div>
+        </details>
+        <details class="accordion" open name="accordion">
+          <summary>Hvordan fjerner jeg svære pletter?</summary>
+          <div class="spg-tekst">
+            <p>Det afhænger af typen af plet. På siden finder du guides til fx rødvin, champagne og is, hvor der
+              forklares simple metoder til hver type plet.</p>
+          </div>
+        </details>
+        <details class="accordion" open name="accordion">
+          <summary>Kan jeg bruge de samme metoder på alle overflader?</summary>
+          <div class="spg-tekst">
+            <p>Nej, nogle materialer kræver mere skånsom behandling. Det er altid en god idé at teste på et lille område
+              først, især på sarte overflader som træ og natursten.</p>
+          </div>
+        </details>
+        <details class="accordion" open name="accordion">
+          <summary>Er naturlige rengøringsmetoder lige så effektive som kemiske?</summary>
+          <div class="spg-tekst">
+            <p>De kan være meget effektive til almindelig rengøring, men meget hårde eller specialiserede pletter kan
+              nogle gange kræve stærkere midler.</p>
+          </div>
+        </details>
+        <details class="accordion" open name="accordion">
+          <summary>Kan jeg kontakte jer hvis jeg har spørgsmål?</summary>
+          <div class="spg-tekst">
+            <p>Ja, du kan kontakte os via kontaktformular, telefon eller e-mail, som du finder på kontaktsiden.</p>
+          </div>
+        </details>
+
+      </article>
+
+
+    </section>
+
+    <!-- NEWS -->
+    <section class="news">
+
+      <article class="news_card">
+        <h3>Du har det allerede derhjemme - men bruger det forkert</h3>
+        <p>Et mindre kemisk produkt, med større effekt</p>
+        <img src="SVG/Asset 25.svg" alt="Natron i forskellige former">
+        <button class="nyhed-button" popovertarget="nyhed-1">Læs mere</button>
+        <div id="nyhed-1" popover>
+          <button popovertarget="nyhed-1">Luk</button>
+          <h3>Du har det allerede derhjemme - men bruger det forkert</h3>
+          <p>Et mindre kemisk produkt, med større effekt</p>
+          <img src="SVG/Asset 25.svg" alt="Natron i forskellige former">
+          <p class="popover_p">Natron er ved at få en renæssance som det nye go-to rengøringsmiddel i mange hjem - og
+            det er ikke uden
+            grund. Hvor traditionelle produkter ofte indeholder stærke kemikalier, tilbyder natron en mere skånsom og
+            alsidig løsning, som de fleste allerede har stående i køkkenet.
+            Det, der gør natron særligt effektivt, er dets evne til både at neutralisere lugt og løsne snavs uden at
+            ridse overflader. Det kan bruges på alt fra køkkenvaske og ovne til sneakers og tekstiler, hvilket gør det
+            til et oplagt alternativ til flere specialprodukter.
+            Flere begynder nu at kombinere natron med simple ingredienser som vand eller eddike for at skabe
+            kraftfulde
+            rengøringsløsninger derhjemme. Resultatet er ikke kun en mere bæredygtig tilgang, men også en billigere
+            måde
+            at holde hjemmet rent på.
+            Selvom natron ikke kan erstatte alt, viser det sig at være overraskende effektivt i mange
+            dagligdagssituationer. Spørgsmålet er derfor ikke længere, om det virker - men hvorfor man ikke er begyndt
+            at bruge det noget før.</p>
+        </div>
+      </article>
+
+      <article class="news_card">
+        <h3>De eneste rengøringsmidler du faktisk behøver</h3>
+        <img src="SVG/Asset 24.svg" alt="rengøringsartikler">
+        <p>Fra rødvin til fedtpletter - med de rigtige produkter ved hånden slipper du for panik, når uheldet er ude.
+        </p>
+        <button class="nyhed-button" popovertarget="nyhed-2">Læs mere</button>
+        <div id="nyhed-2" popover>
+          <button popovertarget="nyhed-2">Luk</button>
+          <h3>De eneste rengøringsmidler du faktisk behøver</h3>
+          <p>Fra rødvin til fedtpletter - med de rigtige produkter ved hånden slipper du for panik, når uheldet er
+            ude.
+          </p>
+          <img src="SVG/Asset 24.svg" alt="Rengøringsartikler">
+          <p class="popover_p">De fleste pletter kræver ikke specialprodukter - men de kræver de rigtige. Og nogle få
+            rengøringsmidler
+            går
+            igen, når det handler om at få tingene helt rene.
+
+            Opvaskemiddel er en af de mest undervurderede helte. Det er særligt effektivt mod fedtpletter, både på tøj
+            og køkkenoverflader. Til kalk og misfarvninger i bad og køkken er eddike stadig en klassiker, der hurtigt
+            opløser belægninger.
+
+            En enzymbaseret pletfjerner er til gengæld uundværlig til organiske pletter som kaffe, vin og sved, fordi
+            den nedbryder pletterne i stedet for bare at dække dem. Og til daglig rengøring er en god
+            universalrengøring
+            det nemmeste valg, når overflader lige skal friskes op.
+
+            Med disse få produkter er du dækket ind til langt de fleste situationer - og slipper for at stå med en
+            plet,
+            du ikke ved, hvordan du skal håndtere.
+          </p>
+        </div>
+      </article>
+
+      <article class="news_card">
+        <h3>Pletfjernings-hacks afsløret</h3>
+        <p>De fleste gør det værre uden at vide det - her er de simple hacks, der faktisk virker.</p>
+        <img src="SVG/Asset 26.svg" alt="5 forskellige pletter">
+        <button class="nyhed-button" popovertarget="nyhed-3">Læs mere</button>
+        <div id="nyhed-3" popover>
+          <button popovertarget="nyhed-3">Luk</button>
+          <h3>Pletfjernings-hacks afsløret</h3>
+          <img src="SVG/Asset 26.svg" alt="5 forskellige pletter">
+          <p class="popover_p">De fleste gør det værre uden at vide det - her er de simple hacks, der faktisk virker.
+            Her er fem
+            klassiske
+            fejl, du bør undgå:</p>
+          <ol>
+            <li>Du gnider i stedet for at duppe
+              Det presser pletten længere ned i materialet. Dup forsigtigt i stedet.</li>
+            <li>Du bruger varmt vand med det samme
+              Især på pletter som blod eller mælk kan varme få dem til at sætte sig permanent. Start altid med koldt
+              vand.</li>
+            <li>Du venter for længe
+              Jo længere tid pletten sidder, jo sværere bliver den at fjerne. Hurtig handling er afgørende. </li>
+            <li>Du bruger for meget produkt
+              Mere er ikke bedre. For meget sæbe kan efterlade rester og gøre problemet værre. </li>
+            <li>Du bruger det forkerte middel
+              Ikke alle pletter er ens - fedt, vin og kaffe kræver forskellige tilgange.</li>
+          </ol>
+          <p>Små ændringer i din måde at håndtere pletter på kan gøre en stor forskel - og ofte redde noget, du ellers
+            havde opgivet.</p>
+        </div>
+      </article>
+
+    </section>
 
   </main>
 
@@ -58,6 +227,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>

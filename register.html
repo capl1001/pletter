@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
-  <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="icon" type="image/png" href="SVG/logo/Asset 30.svg">
   <title>Emergency Site</title>
 </head>
 
 <body id="register">
   <header>
     <nav>
-      <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+      <div class="logo">
+        <a href="index.html"><img src="SVG/logo/Asset 21.png" alt="logo">
+        </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="instruction.html">Efterspil</a></li>
+        <li><a class="menuItem" href="register.html">Få hjælp</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -34,20 +35,76 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
-    <section id="form-section">
-      <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
-      </article>
-      <form id="webform"></form>
+    <h1>Har uheldet været ude - frygt ej!</h1>
+    <section>
+      <p>Pletter sker for os alle.</p>
+
+      <section id="form-section">
+        <p>Skriv til os på mail, så vender vi tilbage inden for 3-4 hverdage med den bedst mulige guide til at få dem
+          væk.
+        </p>
+
+        <article>
+          <form>
+            <div class="form_group">
+              <label for="name">Fulde navn</label>
+              <input type="text" id="name" name="navn" aria-describedby="name-error" required />
+            </div>
+            <fieldset>
+              <legend>
+                <h3>Køn</h3>
+              </legend>
+              <div class="form_group-kon">
+                <label aria-label="kon-error" for="kvinde">
+                  <input aria-describedby="kon-error" type="radio" name="kon" value="Kvinde" id="kvinde" required>
+                  Kvinde</label>
+                <label aria-label="kon-error" for="mand">
+                  <input aria-describedby="kon-error" type="radio" name="kon" value="Mand" id="mand"> Mand</label>
+                <label aria-label="kon-error" for="andet">
+                  <input aria-describedby="kon-error" type="radio" name="kon" value="Andet" id="andet"> Andet</label>
+              </div>
+            </fieldset>
+            <div class="form_group">
+              <label aria-label="email-error" for="email">Email</label>
+              <input type="email" id="email" name="email" aria-describedby="email-error" required />
+            </div>
+            <div class="form_group">
+              <label aria-label="question-error" for="emne">Hvilken plet drejer det sig om?</label>
+              <input type="text" id="emne" name="plet" aria-describedby="question-error" required />
+            </div>
+            <div class="form_group">
+              <Label aria-label="text-error" for="comment">Fortæl os om din plet:</label>
+              <textarea aria-describedby="text-error" name="comment" id="comment"
+                placeholder="Hvor sidder den, hvor stor er den, hvor lang tid har den været der?"> </textarea>
+            </div>
+            <div><Button> Indsend </button></div>
+          </form>
+        </article>
+      </section>
+
+
     </section>
-    <section id="form-summary">
-      <h2>Summary</h2>
-      <article>
-        <p class="placeholder">Opsummering</p>
-      </article>
+    <section class="formgroup">
+      <div class="output">
+        <h2>Summary</h2>
+
+        <p>Navn: <span id="navn_output"></span></p>
+        <p>Køn: <span id="kon_output"></span></p>
+        <p>Email: <span id="email_output"></span></p>
+        <p>Plet: <span id="plet_output"></span></p>
+      </div>
+      <div class="form_nr">
+        <p>Hvis din plet skulle være akut, kan vi rykke ud til dig</p>
+
+        <form aria-label="Oplys telefonnummer" id="number">
+          <label for="number">Oplys telefonnummer</label><input aria-describedby="number-error" type="tel"
+            name="telefonnummer" id="number" placeholder="+45">
+        </form>
+        <div class="nr_btn"><Button> Indsend </button></div>
+      </div>
     </section>
+
+
   </main>
   <footer>
     <nav>
@@ -71,6 +128,8 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/forms.js" defer></script>
 </body>
 
 </html>

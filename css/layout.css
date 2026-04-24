@@ -52,6 +52,25 @@ footer ul {
   flex-direction: column;
   padding-left: 1rem;
 }
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* .grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-card-bg-inverted);
+  margin: 1rem;
+  border-radius: 2rem;
+}
+.tekst {
+  display: grid;
+  gap: 1rem;
+} */
 
 /* LAYOUT FOR SECTIONS */
 

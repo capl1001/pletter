@@ -125,3 +125,93 @@ footer {
 footer a {
   font-size: 0.7rem;
 }
+
+/* Knapper til infografik */
+
+button {
+  background-color: #d2b7be;
+  color: #876971;
+  border: 1px solid #876971;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.buttons-wrapper > button:hover {
+  display: flexbox;
+  justify-content: space-evenly;
+  background-color: #876971;
+  color: #d2b7be;
+  border: 1px solid #d2b7be;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.buttons-wrapper > button:focus {
+  outline: 4px solid #d2b7be;
+  background-color: #876971;
+  color: #d2b7be;
+}
+.logo img {
+  width: auto;
+  height: auto;
+}
+
+/* Toggle */
+
+html {
+  color-scheme: light;
+  --color-heading: light-dark(#876a71, #fff7e4);
+  --color-text: light-dark(#555, #cdc7dc);
+  --color-bg: light-dark(#fff7e4, #2e2e2e);
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-bg: #2e2e2e;
+  --color-menu-bg: #47666c;
+  --color-card-bg: #829fa5;
+  --color-card-bg-inverted: #47666c;
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+#theme-toggle {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+#theme-toggle::before {
+  content: "";
+  display: block;
+  padding: 3px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: gray content-box;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+
+#theme-toggle:checked::before {
+  background-color: blue;
+  translate: calc(var(--w) - var(--h));
+}
