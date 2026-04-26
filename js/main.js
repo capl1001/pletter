@@ -41,9 +41,9 @@ getSavedTheme();
 toggleSwitch?.addEventListener("change", handleThemeChange);
 
 // Eventlisteners for SVG elementerne
-rodvin.addEventListener("click", infoRodvin);
-champagne.addEventListener("click", infoChampagne);
-is.addEventListener("click", infoIs);
+rodvin?.addEventListener("click", infoRodvin);
+champagne?.addEventListener("click", infoChampagne);
+is?.addEventListener("click", infoIs);
 
 // Eventlisteners for knapperne
 btn_rodvin.addEventListener("click", infoRodvin);
